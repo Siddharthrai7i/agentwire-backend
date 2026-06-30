@@ -10,9 +10,6 @@ from agents.editorial_reviewer.agent import editorial_reviewer_node
 
 def _route_start(state: ArticleState) -> str:
     """Decides which Generation Track to take based on requested domain."""
-    if state.get("skipped"):
-        return END
-
     if state.get("domain") == "ainews":
         return "news_curator"
     return "technical_writer"

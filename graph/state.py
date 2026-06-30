@@ -28,4 +28,3 @@ class ArticleState(TypedDict, total=False):
     
     # Final Output
     md_path: str
-    skipped: bool

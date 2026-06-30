@@ -115,13 +115,6 @@ def generate_blog(request: GenerateRequest):
 
     try:
         final_state = graph.invoke(initial_state, config=config)
-        
-        if final_state.get("skipped"):
-            return GenerateResponse(
-                message="Generation was skipped.",
-                status="skipped",
-                details={"domain": final_state.get("domain", "?")}
-            )
 
         return GenerateResponse(
             message="Article generated successfully!",
