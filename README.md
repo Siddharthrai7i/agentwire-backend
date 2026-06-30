@@ -117,7 +117,6 @@ Once started, the API Documentation is accessible at `http://127.0.0.1:8000/docs
 ## API Documentation
 
 ### Article Generation Endpoints
-For detailed information on the difference between these endpoints, read the [Endpoints Comparison Guide](file:///c:/Users/Admin/Desktop/Research%20Agent/agentwire-backend/generate_endpoints_comparison.md).
 
 * **Synchronous Generation (`POST /generate`):**
   * Blocks and waits until the article generation graph completes.
