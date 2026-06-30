@@ -1,12 +1,8 @@
 from typing import Type
 from pydantic import BaseModel, Field
 from langchain_core.tools import BaseTool
-
 from config.settings import app_settings
 import requests
-from typing import Type
-from pydantic import BaseModel, Field
-from langchain_core.tools import BaseTool
 
 
 class TavilySearchInput(BaseModel):

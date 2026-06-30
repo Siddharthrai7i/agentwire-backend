@@ -70,21 +70,4 @@ class LLMAgentService:
             prompt=system_prompt
         )
         return agent
-        
-    def get_custom_agent(self, tools: List[BaseTool], system_prompt: Optional[str] = None):
-        """
-        A flexible builder method to create a custom agent given an arbitrary set of OOP-based tools.
-        
-        Args:
-            tools (List[BaseTool]): A list of initialized classes inheriting from BaseTool.
-            system_prompt (Optional[str]): Context or behavioral instructions injected into the agent.
-            
-        Returns:
-            CompiledGraph: A customizable runnable LangGraph ReAct agent.
-        """
-        agent = create_react_agent(
-            model=self.llm,
-            tools=tools,
-            prompt=system_prompt
-        )
-        return agent
+
